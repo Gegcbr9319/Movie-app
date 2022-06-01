@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+:root {
+    --primary-color: #FEE68E;
+    --secondary-color: #D3D3D3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+  }
+
+.body {
+    background: linear-gradient(45deg, rgb(236, 35, 78) 50%, rgb(19, 231, 238) 50%);
+    background-repeat: repeat;
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+.main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movies {
+   min-height: 100%; 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 40px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #a9a9a9;
+}
+
+.Movie_app {
+    color: lightcyan;
+    font: italic;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.Movie_app:hover {
+  color: blueviolet;
+  transform: rotate(360deg);  
+}
+
+.movie {
+    width: 270px;
+    margin: 30px;
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-information {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 20px;
+    letter-spacing: 10px;
+}
+
+.movie-information h3 {
+    margin-top: 0;
+}
+
+.movie-information span {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.blue {
+    position: relative;
+    color: rgb(8, 187, 246);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.orange {
+    position: relative;
+    color: orange;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.red {
+    position: relative;
+    color: rgb(114, 4, 4);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.h3 {
+    text-align: center;
+}
+.overview {
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+
+.pages {
+    width: 100%;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+
+.page,
+.arrow {
+    padding: 0 .5em;
+    cursor: pointer;
+}
+
+.page {
+    width: 42.7px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.disabled {
+    padding: 0 .5em;
+    color: var(--primary-color);
+    user-select: none;
+}
+
+.page-active {
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border-radius: 1em;
+    cursor: default;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0 10px;
+}
+
+.footer1 span {
+    padding: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
